@@ -59,8 +59,8 @@
             </div>
 
             {% set section = get_section(path="post/_index.md") %}
-            <ol class="mt-8">
-                {% for page in section.pages %}
+            <ol class="mt-8" reversed>
+                {% for page in section.pages | sort(attribute="date") | reverse %}
                 <li>
                     <a href="{{ page.permalink }}" class="text-blue-700 post-link text-lg font-bold">{{ page.title }}</a>
                     <p class="text-gray-600 text-sm mt-1">{{ page.date | date(format="%d %B %Y") }}</p>
