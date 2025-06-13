@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Halo Dunia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gradient-to-br from-blue-400 to-blue-600 text-gray-800;
+        }
+        .image-pop-effect {
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-pop-effect:hover {
+            transform: scale(1.1);
+        }
+        pre {
+            overflow-x: auto;
+            padding: 5px;
+        }
+        p {
+            margin-bottom: 20px !important;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <main class="container mx-auto p-8 flex-grow">
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+            <div class="flex flex-col items-center mb-8 pb-6 border-b-2 border-blue-400">
+                <img
+                    src="https://avatars.githubusercontent.com/u/155524460?v=4"
+                    alt="Gambar Profil"
+                    class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-md image-pop-effect object-cover mb-2"
+                    onerror="this.onerror=null;this.src='https://placehold.co/128x128/aabbcc/ffffff?text=Gambar+Tidak+Ada';"
+                >
+                <p class="text-gray-700 text-lg font-semibold">Faqriansyah</p>
+            </div>
+
+            <article class="mt-8">
+                <h1 class="text-3xl font-bold text-gray-900 mb-4">Halo Dunia</h1>
+                <p class="text-gray-600 text-sm mb-6">Tanggal: 01 June 2025</p>
+
+                <div class="prose max-w-none text-gray-700 leading-relaxed">
+                    <p>Halo semuanya, ini adalah postingan pertama di website blog yang sederhana ini. Yang terlalu sederhana jika bisa dibilang.</p>
+<p>Website ini dibuat dengan sangat simpel, hanya dengan menggunakan SSG Zola. Karena saya cukup malas buat bikin pake CMS yang ribet. Lagi pula, Zola ringan.</p>
+<p>Saya hanya ingin mengatakan, bahwa apa yang saya tulis disini kebanyakan spontan — kecuali tutorial mungkin. Website ini saya buat dengan harapan untuk menumpahkan isi pikiran saya, mendokumentasikan progress belajar saya, atau berbagi pengetahuan teknis yang saya pelajari.</p>
+<pre data-lang="java" style="background-color:#2b303b;color:#c0c5ce;" class="language-java "><code class="language-java" data-lang="java"><span>
+</span><span style="color:#b48ead;">class </span><span style="color:#ebcb8b;">Main </span><span style="color:#eff1f5;">{
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">public static void </span><span style="color:#8fa1b3;">main</span><span style="color:#eff1f5;">(</span><span style="color:#ebcb8b;">String</span><span style="color:#b48ead;">[] </span><span style="color:#bf616a;">argv</span><span style="color:#eff1f5;">) {
+</span><span style="color:#eff1f5;">        </span><span style="color:#ebcb8b;">System</span><span style="color:#eff1f5;">.out.</span><span style="color:#bf616a;">println</span><span style="color:#eff1f5;">(</span><span>&quot;</span><span style="color:#a3be8c;">Halo Dunia</span><span>&quot;</span><span style="color:#eff1f5;">);
+</span><span style="color:#eff1f5;">    }
+</span><span style="color:#eff1f5;">}
+</span><span>
+</span></code></pre>
+
+                </div>
+            </article>
+
+            <div class="flex justify-center mt-10">
+                <a href="https:&#x2F;&#x2F;faqriansyah.github.io" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full shadow-lg transition duration-300">
+                    Balik ke home
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

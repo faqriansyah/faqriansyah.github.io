@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqriansyah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Mengatur font Inter untuk tampilan yang bersih dan modern */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Mengubah background body menjadi gradient biru */
+            @apply bg-gradient-to-br from-blue-400 to-blue-600 text-gray-800;
+        }
+
+        /* Gaya kustom untuk efek pop yang lebih menonjol pada gambar */
+        .image-pop-effect {
+            transition: transform 0.3s ease-in-out;
+            /* Animasi halus untuk masuk dan keluar */
+        }
+
+        .image-pop-effect:hover {
+            transform: scale(1.1);
+            /* Membesar lebih banyak saat di-hover */
+        }
+
+        /* Gaya kustom untuk animasi hover pada link judul postingan */
+        .post-link:hover {
+            color: #3b82f6;
+            /* Biru yang lebih terang (blue-500) saat di-hover */
+            transform: translateX(5px);
+            /* Sedikit bergeser ke kanan */
+            transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+            /* Animasi halus */
+        }
+
+        /* Pastikan elemen ol dan li memiliki padding dan margin yang sesuai */
+        ol {
+            @apply list-decimal pl-6;
+            /* Nomor daftar dan indentasi */
+        }
+
+        li {
+            @apply mb-3;
+            /* Jarak antar item daftar */
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <main class="container mx-auto p-8 flex-grow">
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+            <div class="flex flex-col items-center mb-8 pb-6 border-b-2 border-blue-400">
+                <img src="https://avatars.githubusercontent.com/u/155524460?v=4" alt="Gambar Profil"
+                    class="w-32 h-32 rounded-full border-4 border-blue-500 shadow-md image-pop-effect object-cover mb-2"
+                    onerror="this.onerror=null;this.src='https://placehold.co/128x128/aabbcc/ffffff?text=Gambar+Tidak+Ada';">
+                <p class="text-gray-700 text-lg font-semibold">Faqriansyah</p>
+            </div>
+
+            
+            <ol class="mt-8" reversed>
+                
+                <li>
+                    <a href="https:&#x2F;&#x2F;faqriansyah.github.io&#x2F;post&#x2F;01-halo&#x2F;" class="text-blue-700 post-link text-lg font-bold">Halo Dunia</a>
+                    <p class="text-gray-600 text-sm mt-1">01 June 2025</p>
+                </li>
+                
+            </ol>
+
+        </div>
+    </main>
+</body>
+
+</html>
